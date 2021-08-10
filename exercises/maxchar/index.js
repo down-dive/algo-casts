@@ -5,25 +5,28 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-// function maxChar(str) {
-//     const chars = {};
+function maxChar(str) {
+    const charMap = {};
+    let max = 0;
+    let maxChar = '';
 
 
-//     for (i = 0; i < str.lenght; i++) {
-//         if (chars[char]) {
-//             chars[char]++
-//         } else {
-//             chars[char] = 1;
-//         }
-//     }
-// }
+    for (let char of str) {
+        if (charMap[char]) {
+            charMap[char]++
+        } else {
+            charMap[char] = 1;
+        }
+    }
 
-// // for (let char of str) {
-// //     chars[char] = chars[char] + 1 || 1;
-// //    return chars
-// // }
-
-// // }
+    for (let char in charMap) {
+        if (charMap[char] > max) {
+            max = charMap[char];
+            maxChar = char;
+        }
+    }
+    return maxChar
+}
 
 //version #1
 
@@ -31,7 +34,7 @@ const string = "Hello There!"
 const chars = {};
 
 for (let char of string) {
-    if ( !chars[char]) {
+    if (!chars[char]) {
         chars[char] = 1;
     } else {
         chars[char]++
