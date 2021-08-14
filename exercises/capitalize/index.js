@@ -20,7 +20,6 @@ function capitalize(str) {
 
 
 // second version
-
 function capitalizes(str) {
     let result = str[0].toUpperCase();
 
