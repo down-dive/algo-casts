@@ -39,7 +39,6 @@ for (let char of string) {
         chars[char]++
     }
 }
-
 console.log(chars)
 
 // version #2
