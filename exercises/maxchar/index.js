@@ -43,6 +43,7 @@ for (let char of string) {
 console.log(chars)
 
 // version #2
+
 const strings = "Hello There!"
 const charss = {};
 
