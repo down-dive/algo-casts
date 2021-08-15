@@ -52,4 +52,5 @@ for (cha of strings) {
 }
 console.log(charss)
 
+
 module.exports = maxChar;
