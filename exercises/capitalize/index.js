@@ -33,7 +33,6 @@ function capitalizes(str) {
     }
     return result;
 }
-
 capitalizes("hello there")
 
 module.exports = capitalize;
