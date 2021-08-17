@@ -18,6 +18,7 @@ function capitalize(str) {
 
     return words.join(' ');
 }
+
 // second version
 
 function capitalizes(str) {
