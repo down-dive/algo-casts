@@ -27,8 +27,7 @@ function maxChar(str) {
     return maxChar
 }
 
-//version #1
-
+//version #
 const string = "Hello There!"
 const chars = {};
 
